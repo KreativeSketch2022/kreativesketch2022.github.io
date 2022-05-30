@@ -39,7 +39,7 @@
   .bussinesscard .front .top .logo {
    width: 200px;
    height: 200px;
-   top:16%
+   top:16%;
   }
  }
  
@@ -317,10 +317,8 @@
    -webkit-transform: translateX(-50%);
    transform: translateX(-50%);
 }  
-<<<<<<< HEAD
-..bussinesscard .front .top .logo img {
+.bussinesscard .front .top .logo img {
   width: 325px;
 }
-=======
 .bussinesscard .front .top .logo img{width:150px;}  
->>>>>>> 2a560f25ca94ef20e8c8b0716dc89be4973bb701
+
