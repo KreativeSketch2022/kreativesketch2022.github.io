@@ -43,7 +43,7 @@
   }
  } */
 
- @media only screen and (min-width: 1200px) and (max-width: 3000px) and (orientation : landscape) {
+ @media only screen and (min-width: 800px) and (max-width: 2500px) and (orientation : landscape) {
   .bussinesscard {
     /* height: 700px;  */
     height: 100%; 
