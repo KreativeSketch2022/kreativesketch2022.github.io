@@ -26,7 +26,7 @@
  }
 
 
- @media (min-width: 1200px) {
+ @media (max-width: 1200px) {
   .bussinesscard {
       height: 700px; 
   width: 600px;
