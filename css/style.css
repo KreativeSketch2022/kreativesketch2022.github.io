@@ -28,11 +28,19 @@
 
  @media (min-width: 1200px) {
   .bussinesscard {
-      height: 700px; 
-  width: 600px;
-  overflow: hidden;
-  position: relative; 
-}
+    height: 700px; 
+    width: 600px;
+    overflow: hidden;
+    position: relative; 
+  }
+  bussinesscard .front .top .logo img{
+    width:150px;
+  }  
+  .bussinesscard .front .top .logo {
+   width: 200px;
+   height: 200px;
+   top:16%
+  }
  }
  
  .bgtint {
@@ -287,8 +295,8 @@
    transform: translateY(-52%);
  }*/
  .bussinesscard .front .top .logo {
-     width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 100%;
     display: flex;
     align-items: center;
@@ -302,11 +310,13 @@
     position: relative;
     pointer-events: none;
     left: 50%;
-    top: 16%;
+    top: 10%;
     box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px; 
     -moz-transform: translateX(-50%);
    -ms-transform: translateX(-50%);
    -webkit-transform: translateX(-50%);
    transform: translateX(-50%);
 }  
-.bussinesscard .front .top .logo img{width:150px;}  
+..bussinesscard .front .top .logo img {
+  width: 325px;
+}
