@@ -28,8 +28,9 @@
 
  @media (min-width: 1200px) {
   .bussinesscard {
-    height: 700px; 
-    width: 600px;
+    /* height: 700px;  */
+    height: 100%; 
+    width: 900px;
     overflow: hidden;
     position: relative; 
   }
@@ -139,8 +140,8 @@
    margin: 0;
    padding: 0;
    width: 100%;
-   height: 100%;
-   overflow: hidden;
+   /* height: 100%; 
+   overflow: hidden;*/
  }
  .bussinesscard .front .top:after {
    position: absolute;
@@ -218,11 +219,11 @@
    color: #2a2b39;
    margin-left: 1.7em;
    font-weight: 300;
-   font-size: 1.6em;
-   -moz-transform: translateY(400%);
+   font-size: 1em;
+   /* -moz-transform: translateY(400%);
    -ms-transform: translateY(400%);
    -webkit-transform: translateY(400%);
-   transform: translateY(400%);
+   transform: translateY(400%); */
  }
  .bussinesscard .front .contact span {
    color: #2D3244;
