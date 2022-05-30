@@ -24,6 +24,16 @@
    overflow: hidden;
    z-index: 9;
  }
+
+
+ @media (min-width: 1200px) {
+  .bussinesscard {
+      height: 700px; 
+  width: 600px;
+  overflow: hidden;
+  position: relative; 
+}
+ }
  
  .bgtint {
    position: absolute;
