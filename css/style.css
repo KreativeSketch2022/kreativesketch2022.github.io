@@ -13,7 +13,7 @@
  
  body, html {
    font-family: 'Raleway', sans-serif;
-   background: url(earth.jpg);
+   background: url(../earth.jpg);
    -webkit-background-size: cover;
    -moz-background-size: cover;
    background-size: cover;
