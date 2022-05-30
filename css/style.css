@@ -47,7 +47,8 @@
   .bussinesscard {
     /* height: 700px;  */
     height: 100%; 
-    width: 900px;
+    /* width: 900px; */
+    width:50%;
     overflow: hidden;
     position: relative; 
   }
