@@ -26,7 +26,24 @@
  }
 
 
- @media (min-width: 1200px) {
+ /* @media (min-width: 1200px) {
+  .bussinesscard {
+    height: 100%; 
+    width: 900px;
+    overflow: hidden;
+    position: relative; 
+  }
+  .bussinesscard .front .top .logo img {
+    width:150px !important;
+  }  
+  .bussinesscard .front .top .logo {
+   width: 200px !important;
+   height: 200px !important;
+   top:16% !important;
+  }
+ } */
+
+ @media only screen and (min-width: 1200px) and (max-width: 3000px) and (orientation : landscape) {
   .bussinesscard {
     /* height: 700px;  */
     height: 100%; 
@@ -41,8 +58,9 @@
    width: 200px !important;
    height: 200px !important;
    top:16% !important;
-  }
- }
+  }         
+}
+
  
  .bgtint {
    position: absolute;
