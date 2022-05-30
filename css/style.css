@@ -34,12 +34,12 @@
     position: relative; 
   }
   .bussinesscard .front .top .logo img {
-    width:150px;
+    width:150px !important;
   }  
   .bussinesscard .front .top .logo {
-   width: 200px;
-   height: 200px;
-   top:16%;
+   width: 200px !important;
+   height: 200px !important;
+   top:16% !important;
   }
  }
  
