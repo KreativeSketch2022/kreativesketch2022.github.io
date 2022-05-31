@@ -7,6 +7,15 @@
     font-family: 'Noto Sans', sans-serif
 }
 
+@media (max-width: 576px) {
+    .profile-image {
+        width: 150px !important;
+        height: 150px !important;
+        top: -123px !important;
+        }
+
+}
+
 .featureimage{
     min-height: 25px;
 }
