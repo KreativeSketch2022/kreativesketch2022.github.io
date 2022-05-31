@@ -14,7 +14,7 @@
     border-radius: 150px;
     width: 150px;
     height: 150px;
-    top: -80px;
+    top: -110px;
     position: relative;
     z-index: 10;
     background: #fff;
@@ -35,7 +35,7 @@ body {
 }
 
 .card {
-	color:#fff;
+	/* color:#fff; */
     width: 450px;
     border-radius: 10px;
    /* background: linear-gradient(145deg, #9a40a9, #b74cc9);
@@ -43,6 +43,11 @@ box-shadow:  20px 20px 60px #913ca0,
              -20px -20px 60px #c552d8; */
     border: none;
     background: #ffff;
+}
+
+
+.bottom-23 {
+    bottom: 23%!important;
 }
 
 .neo-button {
