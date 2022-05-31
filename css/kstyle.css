@@ -16,6 +16,13 @@
 
 }
 
+@media (min-width: 576px) {
+    .card {
+        width: 100% !important;
+        }
+
+}
+
 .featureimage{
     min-height: 25px;
 }
