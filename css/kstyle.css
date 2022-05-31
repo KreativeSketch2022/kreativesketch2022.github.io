@@ -13,6 +13,9 @@
         height: 150px !important;
         top: -123px !important;
         }
+        .header-height{
+            margin-top: -111px !important;
+            }        
 
 }
 
@@ -23,14 +26,25 @@
 
 } */
 
+
+
+.header-height{
+text-align: center;
+position: static;
+margin-top: -151px;
+margin-bottom: 44px;
+}
 .featureimage{
     min-height: 25px;
 }
 .profile-image{
     border-radius: 150px;
-    width: 250px;
-    height: 250px;
+    /* width: 250px;
     top: -175px;
+    height: 250px; */
+    width: 200px;
+    height:200px ;   
+    top: -160px;
     position: relative;
     z-index: 10;
     background: #fff;
@@ -42,6 +56,10 @@
 }
 .profile-image > img{
     width: 80%;
+}
+
+.card-header > img{
+    width:750px;
 }
 body {
     display: grid;
@@ -156,3 +174,6 @@ box-shadow:  28px 28px 57px #933da2,
              -28px -28px 57px #c351d6;
 	
 }
+
+
+ 
