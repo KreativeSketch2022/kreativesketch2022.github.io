@@ -18,7 +18,8 @@
         
         }
         .header-height{
-            margin-top: -111px !important;
+            /* margin-top: -111px !important; */
+            margin-top: -51px !important;
             }       
             .card-header > img{
                 width:100% !important;
