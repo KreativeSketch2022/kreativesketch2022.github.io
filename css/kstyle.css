@@ -1,10 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif
+    /* font-family: 'Noto Sans', sans-serif; */
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    /* background: #AB47BC; */
+    background: #ffff;
+    font-family: 'Poppins', sans-serif;
 }
 
 @media (max-width: 576px) {
@@ -77,12 +87,7 @@ margin-bottom: 44px;
 .card-header > img{
     width:750px;
 }
-body {
-    display: grid;
-    place-items: center;
-    /* background: #AB47BC; */
-    background: #ffff;
-}
+
 
 .card {
 	/* color:#fff; */
