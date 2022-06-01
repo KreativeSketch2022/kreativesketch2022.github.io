@@ -55,9 +55,10 @@ margin-top: -81px;
 margin-bottom: 44px;
 }
 
-.header-height . h4 {
-    font-family:poppins thin;
+.header-height h4 {
+    font-family:poppins Thin;
 }
+
 .featureimage{
     min-height: 25px;
 }
