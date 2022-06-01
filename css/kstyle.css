@@ -24,6 +24,9 @@
             .card-header > img{
                 width:100% !important;
             } 
+            #smp > img{
+                width:100% !important;
+            }
 
 }
 
