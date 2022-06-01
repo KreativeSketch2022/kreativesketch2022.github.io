@@ -55,8 +55,8 @@ margin-top: -81px;
 margin-bottom: 44px;
 }
 
-.header-height h4 {
-    font-family:poppins Thin;
+.header-height h4, .header-height h3 {
+    font-family:poppins Medium;
 }
 
 .featureimage{
