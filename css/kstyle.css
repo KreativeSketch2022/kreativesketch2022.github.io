@@ -54,6 +54,10 @@ position: static;
 margin-top: -81px;
 margin-bottom: 44px;
 }
+
+.header-height . h4 {
+    font-family:poppins thin;
+}
 .featureimage{
     min-height: 25px;
 }
