@@ -1,47 +1,142 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Noto Sans', sans-serif
+    /* font-family: 'Noto Sans', sans-serif; */
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    /* background: #AB47BC; */
+    background: #ffff;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 576px) {
+    .profile-image {
+        /* width: 150px !important;
+        top: -123px !important;
+        height: 150px !important; */
+        width: 100px !important;
+        height: 100px !important;        
+        top: -61px !important;
+        }
+        .header-height{
+            /* margin-top: -111px !important; */
+            margin-top: -61px !important;
+            }       
+            .card-header > img{
+                width:100% !important;
+            } 
+            #smp img{
+                width:100% !important;
+            }
+
+}
+
+/* @media (min-width: 767.98px){
+    .card {
+        width: 100% !important;
+        }
+
+} */
+
+
+
+.header-height{
+text-align: center;
+position: static;
+margin-top: -81px;
+margin-bottom: 44px;
+}
+
+.header-height h4, .header-height h3 {
+    font-family:'Poppins Medium';
 }
 
 .featureimage{
     min-height: 25px;
 }
 .profile-image{
-  border: solid 5px #fff;
     border-radius: 150px;
-    width: 150px;
-    height: 150px;
-    overflow: hidden;
-    margin-right: auto;
-    margin-left: auto;
-    top: -80px;
-    margin-bottom: 0;
+    /* width: 250px;
+    top: -175px;
+    height: 250px; */
+    /* width: 200px;
+	
+    height:200px ;    
+	top: -160px;
+	*/
+	width: 150px;
+    height:150px ;   
+    top: -85px;
     position: relative;
     z-index: 10;
     background: #fff;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 auto;
+}
+.profile-image > img{
+    width: 80%;
 }
 
-body {
-    display: grid;
-    place-items: center;
-    background: #AB47BC
+.card-header > img{
+    width:750px;
 }
+
 
 .card {
-	color:#fff;
-    width: 450px;
+	/* color:#fff; */
+    /* width: 450px; */
     border-radius: 10px;
-   background: linear-gradient(145deg, #9a40a9, #b74cc9);
+   /* background: linear-gradient(145deg, #9a40a9, #b74cc9);
 box-shadow:  20px 20px 60px #913ca0, 
-             -20px -20px 60px #c552d8;
-    border: none
+             -20px -20px 60px #c552d8; */
+    border: none;
+    background: #ffff;
 }
 
+
+.bottom-24 {
+    bottom: 24%!important;
+}
+.mt-m15{
+    margin-top: -15px;
+}
+
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    padding: 6px 0px;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 25px;
+    line-height: 1.42857;
+    margin-left:10px;
+}
+
+.ks-btn{
+    color: #fff;
+    background-color: #f85663;
+    border: 2px solid #c7c7c7;
+}
+
+/* .social-buttons > a{
+    margin: 0 16px;
+    background: #3597fb;
+    padding: 26px 27px 23px 27px;
+    display: inline-block;
+    border-radius: 50px;
+    cursor: pointer;
+} */
 .neo-button {
     width: 40px;
     height: 40px;
@@ -105,6 +200,8 @@ box-shadow:  28px 28px 57px #933da2,
 	
 }
 
+
+ 
 
 
 
