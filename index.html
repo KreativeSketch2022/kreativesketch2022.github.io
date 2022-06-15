@@ -14,6 +14,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/kstyle.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+	<link href="css/glightbox.min.css" rel="stylesheet">
+	
   </head>
   <body>
   <div class="container-md container-fluid d-flex justify-content-center p-0">
@@ -39,16 +41,19 @@
                   <a href="" class="btn ks-btn btn-circle" target="_blank"><i class='bx bxl-pinterest-alt'></i></a> -->
               </div>
           </div><hr/>
-      <div class="container">
+      <div class="container portfolio" id="portfolio">
         <div class="row" id="smp">
-          <div class="col-md-4">
-            <div class="card mb-4 shadow-sm">
-              <img src="images/album-01.jpg"  width="200"/>
-              <div class="card-body">
-                <p class="card-text">Social Media Poster</p>
-              </div>
-            </div>
-          </div>
+			<div class="col-md-4 portfolio-item filter-web">
+                  <div class="portfolio-wrap card mb-4 shadow-sm rounded-0">
+                    <img src="images/album-01.jpg" width="227"/>
+                    <div class="portfolio-info">
+                      <h4>Social Media Poster</h4>
+                      <div class="portfolio-links">
+                        <a href="images/album-01.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>		  
           <div class="col-md-4">
             <div class="card mb-4 shadow-sm">
               <img src="images/album-02.jpg"  width="200"/>
@@ -70,7 +75,6 @@
       </div>
     </div>
   </div>
-
 <!-- Modal -->
 <div id="myModal" class="modal fade" tabindex="-1">
         <div class="modal-dialog modal-md">
@@ -85,10 +89,72 @@
         </div>
 		<script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/glightbox.min.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.0/dist/index.bundle.min.js"></script> -->
   <script>
 $(document).ready(function(){
     $("#myModal").modal('show');
 });
+ /**
+   * Porfolio isotope and filter
+   */
+  window.addEventListener('load', () => {
+    let portfolioContainer = select('.portfolio-container');
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: '.portfolio-item',
+        layoutMode: 'fitRows'
+      });
+
+      let portfolioFilters = select('#portfolio-flters li', true);
+
+      on('click', '#portfolio-flters li', function(e) {
+        e.preventDefault();
+        portfolioFilters.forEach(function(el) {
+          el.classList.remove('filter-active');
+        });
+        this.classList.add('filter-active');
+
+        portfolioIsotope.arrange({
+          filter: this.getAttribute('data-filter')
+        });
+      }, true);
+    }
+
+  });
+
+  /**
+   * Initiate portfolio lightbox 
+   */
+  const portfolioLightbox = GLightbox({
+    selector: '.portfolio-lightbox'
+  });
+
+  /**
+   * Initiate portfolio details lightbox 
+   */
+  const portfolioDetailsLightbox = GLightbox({
+    selector: '.portfolio-details-lightbox',
+    width: '90%',
+    height: '90vh'
+  });
+
+  /**
+   * Portfolio details slider
+   */
+  new Swiper('.portfolio-details-slider', {
+    speed: 400,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    }
+  });
  </script>
  
 
