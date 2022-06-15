@@ -90,9 +90,45 @@
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/glightbox.min.js"></script>
 	<script src="js/main.js"></script>
+<script>
+    var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?57977';
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = url;
+    var options = {
+  "enabled":true,
+  "chatButtonSetting":{
+      "backgroundColor":"#4dc247",
+      "ctaText":"Message Us",
+      "borderRadius":"25",
+      "marginLeft":"0",
+      "marginBottom":"50",
+      "marginRight":"50",
+      "position":"right"
+  },
+  "brandSetting":{
+      "brandName":"KreativeSketch",
+      "brandSubTitle":"Freelancer",
+      "brandImg":"https://kreativesketch2022.github.io/images/CircleLogo.svg",
+      "welcomeText":"Hi there!\nHow can I help you?",
+      "messageText":"Hello, I have a question about {{page_link}}",
+      "backgroundColor":"#0a5f54",
+      "ctaText":"Start Chat",
+      "borderRadius":"25",
+      "autoShow":false,
+      "phoneNumber":"918098854433"
+  }
+};
+    s.onload = function() {
+        CreateWhatsappChatWidget(options);
+    };
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+</script>
 
-<div class="kreativesketch_whatsapp"><a href="http://shorturl.at/bszQY" target="_blank">
-	<!--<i class='bx bxl-whatsapp'></i>-->
+<!--<div class="kreativesketch_whatsapp"><a href="http://shorturl.at/bszQY" target="_blank">
+	
 <svg width="200" viewBox="0 0 6225 2141" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_f_0_1)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M1708.52 435.413C1621.13 347.533 1517.16 277.853 1402.62 230.413C1288.09 182.963 1165.27 158.693 1041.28 159.003C521.35 159.003 98.09 581.743 97.88 1101.38C97.88 1267.45 141.28 1429.53 223.77 1572.51L90 2060.75L590.07 1929.64C728.39 2004.86 883.37 2044.3 1040.86 2044.38H1041.28C1561.1 2044.38 1984.36 1621.64 1984.57 1102.01C1984.93 978.193 1960.72 855.533 1913.34 741.113C1865.96 626.693 1796.35 522.793 1708.53 435.413H1708.52Z" fill="#D6D6D6"/>
@@ -149,7 +185,7 @@
 </filter>
 </defs>
 </svg>
-	</a></div>
+	</a></div>-->
  
 
   </body>
