@@ -1,0 +1,30 @@
+@media print {
+    .btn {
+        display:none;
+    }
+	
+	.table{
+		border:none !important;
+	}
+	
+	.table-bordered{
+		border:none !important;
+	}
+	
+	
+	.table thead tr th, .table tbody tr td{
+		border:none !important;
+	}
+	
+.table-bordered thead tr th, .table-bordered tbody tr td{
+		border:none !important;
+	}	
+	
+	.form-control
+	{
+    	border: none !important;
+    	box-shadow: none !important;
+    	outline: none !important;
+  	}
+	
+}
