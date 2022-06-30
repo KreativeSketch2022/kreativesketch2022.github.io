@@ -41,10 +41,10 @@
     <!-- display: none; -->
     <!-- -webkit-appearance: none; -->
 <!-- } -->
-/*
+
 #hidingForms * {
     display:none;
-}*/
+}
 	</style>
 	</head>
 
@@ -73,13 +73,23 @@
 								<p class="mb-1"><span class="text-muted">+91 8825676895</p>
 							</div>
 							<div class="col-md-6 text-right" id="textright">
-								<p class="mb-1 font-weight-bold"><input type="text" class="border-0 font-weight-bold" placeholder="Name"></p>
-								<p class="mb-1"><input type="text" class="text-right border-0" placeholder="Address"></p>
-								<p class="mb-1"><input type="text" class="text-right border-0" placeholder="Address 1"></p>
-								<p class="mb-1"><input type="text" class="border-0" placeholder="Pincode"></p>
-								<p class="mb-1"><input type="email" id="email" name="email" class="text-right border-0" placeholder="Email"></p>
-								<p class="mb-1"><input type="tel" class="text-right border-0"  id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="MobileNo"></p>
+							<select onchange="toggle_form_element(this)" name="parts" id="parts">
+								<option value="-">Please choose</option>
+								<option value="Form1">Part 1</option>
+								<option value="Form2">Part 2</option>
+								<option value="Form3">Part 3</option>
+							</select>
+							<div id="hidingForms">
+								<div id="Form1">
+									<p class="mb-1 font-weight-bold"><input type="text" class="border-0 font-weight-bold" placeholder="Name"></p>
+									<p class="mb-1"><input type="text" class="text-right border-0" placeholder="Address"></p>
+									<p class="mb-1"><input type="text" class="text-right border-0" placeholder="Address 1"></p>
+									<p class="mb-1"><input type="text" class="border-0" placeholder="Pincode"></p>
+									<p class="mb-1"><input type="email" id="email" name="email" class="text-right border-0" placeholder="Email"></p>
+									<p class="mb-1"><input type="tel" class="text-right border-0"  id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="MobileNo"></p>
+								</div>
 							</div>
+						</div>
 						</div>
 						<div class="row clearfix">
 							<div class="col-md-12">
@@ -123,17 +133,17 @@
 						<div class="row clearfix">
 							<div class="col-md-12">
 								<!-- <textarea class="form-control" rows="3"></textarea> -->
-<select onchange="toggle_form_element(this)" name="parts" id="parts">
-    <option value="-">Please choose</option>
-    <option value="Form1">Part 1</option>
-    <option value="Form2">Part 2</option>
-    <option value="Form3">Part 3</option>
-</select>
-<div id="hidingForms">
-    <div id="Form1">Part 1</div>
-    <div id="Form2">Part 2</div>
-    <div id="Form3">Part 3</div>
-</div>								
+<!-- <select onchange="toggle_form_element(this)" name="parts" id="parts"> -->
+    <!-- <option value="-">Please choose</option> -->
+    <!-- <option value="Form1">Part 1</option> -->
+    <!-- <option value="Form2">Part 2</option> -->
+    <!-- <option value="Form3">Part 3</option> -->
+<!-- </select> -->
+<!-- <div id="hidingForms"> -->
+    <!-- <div id="Form1">Part 1</div> -->
+    <!-- <div id="Form2">Part 2</div> -->
+    <!-- <div id="Form3">Part 3</div> -->
+<!-- </div>								 -->
 								
 							</div>
 						</div>
@@ -238,13 +248,6 @@ $(function() {
         }
     }
 </script>
-<select onchange="toggle_form_element(this)" name="parts" id="parts">
-    <option value="-">Please choose</option>
-    <option value="Form1">Part 1</option>
-    <option value="Form2">Part 2</option>
-    <option value="Form3">Part 3</option>
-</select>
-
 </body>
 
 </html>
